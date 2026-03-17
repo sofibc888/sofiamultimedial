@@ -23,7 +23,37 @@ Ejercico 1, semana 1
 <title>Multimedial</title>
 <!-- Título de la página que aparece en la pestaña del navegador -->
 
-<style>
+style{
+
+  background-color: black;
+  /* Define que el fondo de toda la página sea blanco */
+
+  color: green;
+  /* Define que el color del texto sea negro */
+
+  margin: 0;
+  /* Elimina los márgenes que los navegadores agregan por defecto */
+
+  height: 100vh;
+  /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
+
+  display: flex;
+  /* Activa el sistema Flexbox para organizar y centrar elementos */
+
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+
+  align-items: center;
+  /* Centra el contenido verticalmente */
+
+  font-family: Arial, sans-serif;
+  /* Define la tipografía del texto */
+
+  font-size: 60px;
+  /* Define el tamaño grande del texto */
+
+}
+
 /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
 
 body{
