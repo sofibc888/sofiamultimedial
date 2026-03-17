@@ -33,7 +33,7 @@ body{
   background-color: white;
   /* Define que el fondo de toda la página sea blanco */
 
-  color: blue;
+  color: black;
   /* Define que el color del texto sea negro */
 
   margin: 0;
