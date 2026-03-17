@@ -8,75 +8,70 @@ Ejercico 1, semana 1
 
 ```
 
-<!DOCTYPE html>
-<!-- Indica al navegador que este documento usa HTML5 -->
-
 <html>
 <!-- Inicio del documento HTML -->
 
 <head>
-<!-- Sección donde van metadatos, título y estilos -->
+    <!-- Sección donde van metadatos, título y estilos -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
 
-<meta charset="UTF-8">
-<!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
+    <title>sofiamultimedial</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
 
-<title>sofiamultimedial</title>
-<!-- Título de la página que aparece en la pestaña del navegador -->
+    <style>
+        /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
+        
+        body {
+            /* "body" se refiere a todo el contenido visible de la página */
 
-<style>
-/* Aquí comienza la sección de estilos CSS que define la apariencia visual */
+            /* CAMBIO 1: El fondo ahora es NEGRO */
+            background-color: black;
+            /*  Anteriormente: white;  */
 
-body{
-/* "body" se refiere a todo el contenido visible de la página */
+            /* CAMBIO 2: El texto ahora es VERDE */
+            color: green;
+            /*  Anteriormente: black;  */
 
-  background-color: white;
-  /* Define que el fondo de toda la página sea blanco */
+            margin: 0;
+            /* Elimina los márgenes que los navegadores agregan por defecto */
 
-  color: black;
-  /* Define que el color del texto sea negro */
+            height: 100vh;
+            /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
 
-  margin: 0;
-  /* Elimina los márgenes que los navegadores agregan por defecto */
+            display: flex;
+            /* Activa el sistema Flexbox para organizar y centrar elementos */
 
-  height: 100vh;
-  /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
+            justify-content: center;
+            /* Centra el contenido horizontalmente */
 
-  display: flex;
-  /* Activa el sistema Flexbox para organizar y centrar elementos */
+            align-items: center;
+            /* Centra el contenido verticalmente */
 
-  justify-content: center;
-  /* Centra el contenido horizontalmente */
+            font-family: Arial, sans-serif;
+            /* Define la tipografía del texto */
 
-  align-items: center;
-  /* Centra el contenido verticalmente */
-
-  font-family: Arial, sans-serif;
-  /* Define la tipografía del texto */
-
-  font-size: 60px;
-  /* Define el tamaño grande del texto */
-
-}
-/* Fin de las reglas de estilo del body */
-
-</style>
-<!-- Fin de la sección de estilos -->
+            font-size: 60px;
+            /* Define el tamaño grande del texto */
+        }
+        /* Fin de las reglas de estilo del body */
+    </style>
+    <!-- Fin de la sección de estilos -->
 
 </head>
 <!-- Fin de la sección head -->
 
 <body>
-<!-- Inicio del contenido visible de la página -->
+    <!-- Inicio del contenido visible de la página -->
 
-sofiamultimedial
-<!-- Texto que aparece en el centro de la pantalla -->
+    sofiamultimedial
+    <!-- Texto que aparece en el centro de la pantalla -->
 
 </body>
 <!-- Fin del contenido visible -->
 
 </html>
 <!-- Fin del documento HTML -->
-
 
 
 
