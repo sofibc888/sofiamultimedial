@@ -7,7 +7,6 @@
 Ejercico 1, semana 1 
 
 ```
-
 <!DOCTYPE html>
 <!-- Indica al navegador que este documento usa HTML5 -->
 
@@ -63,6 +62,4 @@ Ejercico 1, semana 1
 </html>
 <!-- ¡IMPORTANTE! Esta etiqueta cierra el documento HTML -->
 
-
 ```
-
