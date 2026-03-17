@@ -1,3 +1,13 @@
+# sofiamultimedial
+
+## taller miltimedia
+
+#### cultura web y arte digital 
+
+Ejercico 1, semana 1 
+
+```
+
 <!DOCTYPE html>
 <!-- Indica al navegador que este documento usa HTML5 -->
 
@@ -10,7 +20,7 @@
 <meta charset="UTF-8">
 <!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
 
-<title>Multimedial</title>
+<title>sofiamultimedial</title>
 <!-- Título de la página que aparece en la pestaña del navegador -->
 
 <style>
@@ -58,7 +68,7 @@ body{
 <body>
 <!-- Inicio del contenido visible de la página -->
 
-MULTIMEDIAL
+sofiamultimedial
 <!-- Texto que aparece en el centro de la pantalla -->
 
 </body>
@@ -66,3 +76,9 @@ MULTIMEDIAL
 
 </html>
 <!-- Fin del documento HTML -->
+
+
+
+
+```
+
