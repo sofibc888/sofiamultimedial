@@ -6,6 +6,7 @@
 
 Ejercico 1, semana 1 
 
+```
 
 <!DOCTYPE html>
 <!-- Indica al navegador que este documento usa HTML5 -->
@@ -31,7 +32,7 @@ body{
   background-color: white;
   /* Define que el fondo de toda la página sea blanco */
 
-  color: green;
+  color: black;
   /* Define que el color del texto sea negro */
 
   margin: 0;
