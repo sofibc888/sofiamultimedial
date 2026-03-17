@@ -8,6 +8,9 @@ Ejercico 1, semana 1
 
 ```
 
+<!DOCTYPE html>
+<!-- Indica al navegador que este documento usa HTML5 -->
+
 <html>
 <!-- Inicio del documento HTML -->
 
@@ -24,52 +27,41 @@ Ejercico 1, semana 1
         
         body {
             /* "body" se refiere a todo el contenido visible de la página */
-
-           
             background-color: black;
-         
+            /* Fondo negro */
             color: green;
-
+            /* Texto verde */
             margin: 0;
             /* Elimina los márgenes que los navegadores agregan por defecto */
-
             height: 100vh;
             /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
-
             display: flex;
             /* Activa el sistema Flexbox para organizar y centrar elementos */
-
             justify-content: center;
             /* Centra el contenido horizontalmente */
-
             align-items: center;
             /* Centra el contenido verticalmente */
-
             font-family: Arial, sans-serif;
             /* Define la tipografía del texto */
-
             font-size: 60px;
             /* Define el tamaño grande del texto */
         }
-        /* Fin de las reglas de estilo del body */
+        /* ¡IMPORTANTE! Esta llave } cierra las reglas de body */
     </style>
-    <!-- Fin de la sección de estilos -->
+    <!-- ¡IMPORTANTE! Esta etiqueta cierra la sección de estilos -->
 
 </head>
-<!-- Fin de la sección head -->
+<!-- ¡IMPORTANTE! Esta etiqueta cierra la sección head -->
 
 <body>
     <!-- Inicio del contenido visible de la página -->
-
     sofiamultimedial
     <!-- Texto que aparece en el centro de la pantalla -->
-
 </body>
-<!-- Fin del contenido visible -->
+<!-- ¡IMPORTANTE! Esta etiqueta cierra el contenido visible -->
 
 </html>
-<!-- Fin del documento HTML -->
-
+<!-- ¡IMPORTANTE! Esta etiqueta cierra el documento HTML -->
 
 
 ```
