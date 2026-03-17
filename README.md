@@ -23,11 +23,7 @@ Ejercico 1, semana 1
 <title>sofiamultimedial</title>
 <!-- Título de la página que aparece en la pestaña del navegador -->
 
-style{
-   color: green;
-  /* Define que el color del texto sea negro */
-
-}
+<style>
 /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
 
 body{
@@ -36,7 +32,7 @@ body{
   background-color: white;
   /* Define que el fondo de toda la página sea blanco */
 
-  color: green;
+  color: black;
   /* Define que el color del texto sea negro */
 
   margin: 0;
