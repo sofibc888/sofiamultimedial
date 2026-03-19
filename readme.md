@@ -125,6 +125,42 @@ Tarea 1
 ```
 
 Semana 2 
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+<meta charset="UTF-8"
+<title>Página 2</title>
+</head>
+
+<body>
+
+<h1>Esta es la segunda página</h1>
+
+<a href="pagina1.html"> Volver a la página principal</a>
+<a href="pagina1.html" target="_blank"> Volver a la página principal</a>
+
+<!--a> href="https://www.wikipedia.org" target="_blank">Ir a Wikipedia</a> -->
+
+</body>
+</html>```
 ```
 
-```
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<html lang="es">
+<meta charset="UTF-8"
+<title>X_X</title>
+</head>
+
+<body>
+
+<h1>Página principal</h1>
+
+<a href="pagina2.html">Ir a la segunda página</a>
+
+</body>
+</html>
