@@ -177,3 +177,78 @@ Semana 2
 [drive-download-20260326T121043Z-1-001 (1).zip](https://github.com/user-attachments/files/26275206/drive-download-20260326T121043Z-1-001.1.zip)
 
 ```
+
+
+
+
+###imagenes carpeta
+Ejercico , semana 3
+
+
+<!DOCTYPE html>
+<!-- Indica al navegador que este documento usa HTML5 -->
+
+<html>
+<!-- Inicio del documento HTML -->
+
+<head>
+    <!-- Sección donde van metadatos, título y estilos -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
+
+    <title>sofiamultimedial</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+
+    <style>
+        /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
+        
+        body {
+            /* "body" se refiere a todo el contenido visible de la página */
+            background-color: #DFF2FE;
+            /* Fondo negro */
+            color: #1D293D;
+            /* Texto verde */
+            margin: 0;
+            /* Elimina los márgenes que los navegadores agregan por defecto */
+            height: 100vh;
+            /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
+            display: flex;
+            /* Activa el sistema Flexbox para organizar y centrar elementos */
+            justify-content: center;
+            /* Centra el contenido horizontalmente */
+            align-items: center;
+            /* Centra el contenido verticalmente */
+            font-family: Arial, sans-serif;
+            /* Define la tipografía del texto */
+            font-size: 60px;
+            /* Define el tamaño grande del texto */
+        }
+        /* ¡IMPORTANTE! Esta llave } cierra las reglas de body */
+    </style>
+    <!-- ¡IMPORTANTE! Esta etiqueta cierra la sección de estilos -->
+
+</head>
+<!-- ¡IMPORTANTE! Esta etiqueta cierra la sección head -->
+
+<body>
+    <!-- Inicio del contenido visible de la página -->
+
+
+
+  <img src="img/IMG_1001.jpg" alt="descripción"  width="250" >
+ 
+  
+  
+
+
+    sofiamultimedial
+    <!-- Texto que aparece en el centro de la pantalla -->
+</body>
+<!-- ¡IMPORTANTE! Esta etiqueta cierra el contenido visible -->
+
+</html>
+<!-- ¡IMPORTANTE! Esta etiqueta cierra el documento HTML -->
+```
+
+
+
