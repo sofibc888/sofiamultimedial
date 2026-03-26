@@ -67,6 +67,8 @@ Ejercico 1, semana 1
 
 
 Tarea 1 
+
+
 ```
 <!DOCTYPE html>
 <html>
@@ -122,9 +124,13 @@ Tarea 1
     </div>
 </body>
 </html>
+
 ```
 
 Semana 2 
+
+```
+
 <!DOCTYPE html>
 <html lang="es"></html>
 <head>
@@ -142,8 +148,9 @@ Semana 2
 <!--a> href="https://www.wikipedia.org" target="_blank">Ir a Wikipedia</a> -->
 
 </body>
-</html>```
-```
+</html>
+
+
 
 
 
@@ -164,3 +171,5 @@ Semana 2
 
 </body>
 </html>
+
+```
