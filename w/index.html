@@ -1,63 +1,86 @@
 <!DOCTYPE html>
-<!-- Indica al navegador que este documento usa HTML5 -->
-
 <html>
-<!-- Inicio del documento HTML -->
 
 <head>
-    <!-- Sección donde van metadatos, título y estilos -->
     <meta charset="UTF-8">
-    <!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
-
-    <title>sofiamultimedial</title>
-    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Sofia multimedial</title>
 
     <style>
-        /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
-        
+        /* estilos general */
         body {
-            /* "body" se refiere a todo el contenido visible de la página */
             background-color: #DFF2FE;
-            /* Fondo negro */
             color: #1D293D;
-            /* Texto verde */
             margin: 0;
-            /* Elimina los márgenes que los navegadores agregan por defecto */
             height: 100vh;
-            /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
-            display: flex;
-            /* Activa el sistema Flexbox para organizar y centrar elementos */
-            justify-content: center;
-            /* Centra el contenido horizontalmente */
-            align-items: center;
-            /* Centra el contenido verticalmente */
-            font-family: Arial, sans-serif;
-            /* Define la tipografía del texto */
-            font-size: 60px;
-            /* Define el tamaño grande del texto */
+            font-family: "Times New Roman", serif;
         }
-        /* ¡IMPORTANTE! Esta llave } cierra las reglas de body */
-    </style>
-    <!-- ¡IMPORTANTE! Esta etiqueta cierra la sección de estilos -->
 
+        /* estilos Contenedor principal, (titulos y subtitulos) centrado */
+        .contenedor {
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+
+        /* Título grande */
+        h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+            
+        }
+
+        /* Nombre debajo del título */
+        h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        /* hace que la Imagen este centrada */
+        img {
+            display: block;
+            margin: 40px auto;
+        }
+
+        /* hace que los Links esten en la esquina */
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        /* color de los  Links*/
+        .nav a {
+            display: block;
+            font-size: 16px;
+            text-decoration: none;
+            color: #1D293D;
+            margin-bottom: 5px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra la sección head -->
 
 <body>
-    <!-- Inicio del contenido visible de la página -->
+
+    <!-- Links en la esquina -->
+    <div class="nav">
+        <a href="Obras.html">Obras</a>
+        <a href="Contactos.html">Contactos</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="contenedor">
+        <h1>Pinturas</h1>
+        <h2>Sofia Becerra</h2>
+    </div>
+
+    <!-- Imagen  -->
+    <img src="img/IMG_1001.jpg" alt="descripción" width="250">
 
 
-
-  <img src="img/IMG_1001.jpg" alt="descripción"  width="250" >
- 
-  
-  
-
-
-    sofiamultimedial
-    <!-- Texto que aparece en el centro de la pantalla -->
 </body>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra el contenido visible -->
 
 </html>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra el documento HTML -->
