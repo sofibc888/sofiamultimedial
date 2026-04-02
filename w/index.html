@@ -1,85 +1,122 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofia multimedial</title>
 
     <style>
-        /* estilos general */
+        /* Estilos generales */
         body {
             background-color: #DFF2FE;
             color: #1D293D;
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             font-family: "Times New Roman", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            padding: 40px 0;
         }
 
-        /* estilos Contenedor principal, (titulos y subtitulos) centrado */
+        /* Contenedor de títulos */
         .contenedor {
             text-align: center;
-            margin-top: 40px;
-            
+            margin-bottom: 20px;
         }
 
-        /* Título grande */
         h1 {
-            font-size: 70px;
-            margin-bottom: 10px;
-            
+            font-size: 80px;
+            margin: 0;
+            letter-spacing: 2px;
         }
 
-        /* Nombre debajo del título */
         h2 {
-            font-size: 30px;
-            margin-top: 0;
+            font-size: 35px;
+            margin: 5px 0;
+            font-weight: normal;
         }
 
-        /* hace que la Imagen este centrada */
-        img {
+        /* Estilo para las categorías (Acuarelas, etc.) */
+        .categorias {
+            font-family: "Apple Chancery", "ITC Zapf Chancery", "Zapf Chancery", cursive; /* Fuente elegante tipo manuscrita */
+            font-style: italic;
+            font-size: 24px;
+            color: #4A607A;
+            margin-top: 10px;
+        }
+
+        /* Imagen Principal Optimizada */
+        .imagen-principal {
             display: block;
             margin: 40px auto;
+            width: 450px; /* Tamaño grande */
+            height: auto;
+            border-radius: 15px;
+            /* Eliminamos bordes blancos y añadimos sombra suave */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            cursor: pointer;
         }
 
-        /* hace que los Links esten en la esquina */
-        .nav {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+        .imagen-principal:active {
+            transform: scale(1.05);
         }
-        /* color de los  Links*/
-        .nav a {
-            display: block;
-            font-size: 16px;
-            text-decoration: none;
+
+        /* Navegación inferior con botones */
+        .nav-inferior {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-nav {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: transparent;
             color: #1D293D;
-            margin-bottom: 5px;
+            border: 2px solid #1D293D;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px; /* Forma redondeada para los botones */
+            transition: all 0.3s ease;
         }
 
-        .nav a:hover {
-            text-decoration: underline;
+        .btn-nav:hover {
+            background-color: #1D293D;
+            color: #DFF2FE;
+            transform: translateY(-3px); /* Pequeña animación al pasar el mouse */
         }
 
+        /* Ajuste para móviles */
+        @media (max-width: 600px) {
+            h1 { font-size: 50px; }
+            .imagen-principal { width: 90%; }
+            .nav-inferior { flex-direction: column; align-items: center; }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Links en la esquina -->
-    <div class="nav">
-        <a href="Obras.html">Obras</a>
-        <a href="Contactos.html">Contactos</a>
-    </div>
-
-    <!-- Contenido principal -->
-    <div class="contenedor">
+    <header class="contenedor">
         <h1>Pinturas</h1>
         <h2>Sofia Becerra</h2>
-    </div>
+        <div class="categorias">
+            Acuarelas — Acrílicos — Óleos
+        </div>
+    </header>
 
-    <!-- Imagen  -->
-    <img src="img/IMG_1001.jpg" alt="descripción" width="250">
+    <img src="img/IMG_3769.jpg" alt="Obra de Sofia Becerra" class="imagen-principal">
 
+    <nav class="nav-inferior">
+        <a href="Obras.html" class="btn-nav">Obras</a>
+        <a href="Contactos.html" class="btn-nav">Contactos</a>
+    </nav>
 
 </body>
 
