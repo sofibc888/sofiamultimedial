@@ -535,3 +535,381 @@ avance pagina de contacto
 </html>
 ```
 
+
+
+
+
+avance pagina principal/ obra/ y contacto
+
+```
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia multimedial</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #DFF2FE;
+            color: #1D293D;
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Times New Roman", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        /* Contenedor de títulos */
+        .contenedor {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        /* Estilo para las categorías (Acuarelas, etc.) */
+        .categorias {
+            font-family: "Apple Chancery", "ITC Zapf Chancery", "Zapf Chancery", cursive; /* Fuente elegante tipo manuscrita */
+            font-style: italic;
+            font-size: 24px;
+            color: #4A607A;
+            margin-top: 10px;
+        }
+
+        /* Imagen Principal Optimizada */
+        .imagen-principal {
+            display: block;
+            margin: 40px auto;
+            width: 450px; /* Tamaño grande */
+            height: auto;
+            border-radius: 15px;
+            /* Eliminamos bordes blancos y añadimos sombra suave */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .imagen-principal:active {
+            transform: scale(1.05);
+        }
+
+        /* Navegación inferior con botones */
+        .nav-inferior {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-nav {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: transparent;
+            color: #1D293D;
+            border: 2px solid #1D293D;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px; /* Forma redondeada para los botones */
+            transition: all 0.3s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: #1D293D;
+            color: #DFF2FE;
+            transform: translateY(-3px); /* Pequeña animación al pasar el mouse */
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 600px) {
+            h1 { font-size: 50px; }
+            .imagen-principal { width: 90%; }
+            .nav-inferior { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="contenedor">
+        <h1>Pinturas</h1>
+        <h2>Sofia Becerra</h2>
+        <div class="categorias">
+            Acuarelas — Acrílicos — Óleos
+        </div>
+    </header>
+
+    <img src="img/IMG_3769.jpg" alt="Obra de Sofia Becerra" class="imagen-principal">
+
+    <nav class="nav-inferior">
+        <a href="Obras.html" class="btn-nav">Obras</a>
+        <a href="Contactos.html" class="btn-nav">Contactos</a>
+    </nav>
+
+</body>
+
+</html>
+
+```
+
+
+obra
+```
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia multimedial - Obras</title>
+
+    <style>
+        /* Base del sitio */
+        body {
+            background-color: #DFF2FE;
+            color: #1D293D;
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Times New Roman", serif;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; /* Centra todo horizontalmente */
+            padding: 60px 0;
+        }
+
+        /* Título centrado con margen fijo */
+        .titulo-obras {
+            font-size: 70px;
+            margin: 0 0 50px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Galería Flexible y ordenada */
+        .contenedor-galeria {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; /* Alinea las fotos al centro */
+            align-items: flex-end;   /* Alinea las bases de las fotos para que se vea ordenado */
+            gap: 40px;
+            width: 95%;
+            max-width: 1200px;
+            margin-bottom: 60px; /* Espacio de seguridad antes del botón */
+        }
+
+        .obra-item {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .obra-item img {
+            /* Muestra la obra completa sin recortar */
+            height: auto;
+            max-height: 400px; 
+            width: auto;
+            max-width: 100%; 
+            
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            display: block;
+        }
+
+        /* Efecto al hacer clic */
+        .obra-item:active {
+            transform: scale(1.05);
+        }
+
+        /* Botón de Volver corregido */
+        .contenedor-boton {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: transparent;
+            color: #1D293D;
+            border: 2px solid #1D293D;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 50px; /* Bordes más redondeados y elegantes */
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn-volver:hover {
+            background-color: #1D293D;
+            color: #DFF2FE;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Navegación lateral superior */
+        .nav {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #1D293D;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .titulo-obras { font-size: 50px; }
+            .obra-item img { max-height: 300px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="Contactos.html">Contactos</a>
+    </div>
+
+    <h1 class="titulo-obras">Obras</h1>
+
+    <div class="contenedor-galeria">
+        <div class="obra-item"><img src="img/IMG_3769.jpg" alt="Composición Circular"></div>
+        <div class="obra-item"><img src="img/IMG_9081.jpg" alt="Obra 1"></div>
+        <div class="obra-item"><img src="img/IMG_0402.jpg" alt="Obra 2"></div>
+        <div class="obra-item"><img src="img/tigres.jpg" alt="Obra 3"></div>
+        <div class="obra-item"><img src="img/carrusel.jpg" alt="Carrusel"></div>
+        <div class="obra-item"><img src="img/niños.jpg" alt="Niños"></div>
+    </div>
+
+    <div class="contenedor-boton">
+        <a href="index.html" class="btn-volver">Volver al menú principal</a>
+    </div>
+
+</body>
+</html>
+
+```
+
+
+
+contacto
+```
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sofia multimedial</title>
+
+    <style>
+        /* Estilos general */
+        body {
+            background-color: #DFF2FE;
+            color: #1D293D;
+            margin: 0;
+            height: 100vh;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Contenedor principal centrado */
+        .contenedor {
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* Contenedor principal centrado */
+        .informacion {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Título grande */
+        h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+
+        /* Nombre debajo del título */
+        h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        /* Imagen centrada */
+        img {
+            display: block;
+            margin: 40px auto;
+        }
+
+        /* Links en esquina */
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .nav a {
+            display: block;
+            font-size: 16px;
+            text-decoration: none;
+            color: #1D293D;
+            margin-bottom: 5px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Contenido principal -->
+    <div class="contenedor">
+        <h1>CONTACTOS</h1>
+    </div>
+   
+   <!-- Links en la esquina -->
+   <div class="nav">
+        <a href="Obras.html">Obras</a>
+        <a href="index.html">Volver a la pagina principal</a>
+        <a href="https://www.wikipedia.org" target="_blank">Ir a Wikipedia</a>
+
+    </div>
+
+    <div class="informacion">   
+        <p>Mail: sbecerraforero@uft.edu</p>
+        <p>Instagram: @luz_degrillo</p>
+        <p>Numero de telefono: +56965349678</p>
+    </div>
+
+   
+
+</body>
+</html>
+```
