@@ -174,7 +174,7 @@ Semana 2
 
 ```
 
-[drive-download-20260326T121043Z-1-001 (1).zip](https://github.com/user-attachments/files/26275206/drive-download-20260326T121043Z-1-001.1.zip)
+
 
 ```
 
@@ -541,6 +541,8 @@ avance pagina de contacto
 
 avance pagina principal/ obra/ y contacto
 
+Uso de IA geminis para ordenar los botonces de contacto y obra y ordenar la imagenen centrandola
+
 ```
 
 <!DOCTYPE html>
@@ -670,7 +672,11 @@ avance pagina principal/ obra/ y contacto
 
 
 obra
+Uso de IA geminis en este codigo para ayudar a centrar las imagenes o ordenarlas de acuerdo a la tematica.
+
+
 ```
+
 <!DOCTYPE html>
 <html lang="es">
 
