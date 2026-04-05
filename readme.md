@@ -541,7 +541,7 @@ avance pagina de contacto
 
 avance pagina principal/ obra/ y contacto
 
-Uso de IA geminis para ordenar los botonces de contacto y obra y ordenar la imagenen centrandola
+Uso de IA geminis para ordenar los botonces de contacto y obra y ordenar la imagenen centrandola, y para crear botones que gian a las otras paginas.
 
 ```
 
@@ -671,7 +671,7 @@ Uso de IA geminis para ordenar los botonces de contacto y obra y ordenar la imag
 ```
 
 
-obra
+obra/
 Uso de IA geminis en este codigo para ayudar a centrar las imagenes o ordenarlas de acuerdo a la tematica.
 
 
@@ -822,7 +822,7 @@ Uso de IA geminis en este codigo para ayudar a centrar las imagenes o ordenarlas
 
 
 
-contacto
+contacto/ Uso de IA GEMINIS especificamente para centrar la info de contacto.
 ```
 <!DOCTYPE html>
 <html lang="es"></html>
