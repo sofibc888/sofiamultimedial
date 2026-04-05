@@ -1,87 +1,140 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Sofia multimedial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia multimedial - Obras</title>
 
     <style>
+        /* Base del sitio */
         body {
             background-color: #DFF2FE;
             color: #1D293D;
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             font-family: "Times New Roman", serif;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; /* Centra todo horizontalmente */
+            padding: 60px 0;
         }
 
-        /* Contenedor principal centrado */
-        .contenedor {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        /* Título grande */
-        h1 {
+        /* Título centrado con margen fijo */
+        .titulo-obras {
             font-size: 70px;
-            margin-bottom: 10px;
+            margin: 0 0 50px 0;
+            text-align: center;
+            width: 100%;
         }
 
-        /* Nombre debajo del título */
-        h2 {
-            font-size: 30px;
-            margin-top: 0;
+        /* Galería Flexible y ordenada */
+        .contenedor-galeria {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; /* Alinea las fotos al centro */
+            align-items: flex-end;   /* Alinea las bases de las fotos para que se vea ordenado */
+            gap: 40px;
+            width: 95%;
+            max-width: 1200px;
+            margin-bottom: 60px; /* Espacio de seguridad antes del botón */
         }
 
-        /* Imagen centrada */
-        img {
+        .obra-item {
             display: block;
-            margin: 40px auto;
+            transition: transform 0.3s ease;
         }
 
-        /* Links en esquina */
+        .obra-item img {
+            /* Muestra la obra completa sin recortar */
+            height: auto;
+            max-height: 400px; 
+            width: auto;
+            max-width: 100%; 
+            
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            display: block;
+        }
+
+        /* Efecto al hacer clic */
+        .obra-item:active {
+            transform: scale(1.05);
+        }
+
+        /* Botón de Volver corregido */
+        .contenedor-boton {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: transparent;
+            color: #1D293D;
+            border: 2px solid #1D293D;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 50px; /* Bordes más redondeados y elegantes */
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn-volver:hover {
+            background-color: #1D293D;
+            color: #DFF2FE;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Navegación lateral superior */
         .nav {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 25px;
+            right: 30px;
         }
 
         .nav a {
-            display: block;
-            font-size: 16px;
             text-decoration: none;
             color: #1D293D;
-            margin-bottom: 5px;
+            font-size: 18px;
         }
 
         .nav a:hover {
             text-decoration: underline;
         }
 
+        /* Responsive */
+        @media (max-width: 768px) {
+            .titulo-obras { font-size: 50px; }
+            .obra-item img { max-height: 300px; }
+        }
     </style>
 </head>
 
 <body>
 
-    <img src="img/IMG_9081.jpg" alt="descripción"  width="250" >
-    <img src="img/IMG_0402.jpg" alt="descripción"  width="250" >
-    
-    <div class="contenedor">
-        
-        <h1>Obras</h1>
-        
-        <h2></h2>
-        
-        <h3></h3>
-        
-        <h4></h4>
+    <div class="nav">
+        <a href="Contactos.html">Contactos</a>
     </div>
 
-  
-   <div class="nav">
-        <a href="Contactos.html">Contactos</a>
-        <a href="index.html">Volver a la pagina principal</a>
+    <h1 class="titulo-obras">Obras</h1>
+
+    <div class="contenedor-galeria">
+        <div class="obra-item"><img src="img/IMG_3769.jpg" alt="Composición Circular"></div>
+        <div class="obra-item"><img src="img/IMG_9081.jpg" alt="Obra 1"></div>
+        <div class="obra-item"><img src="img/IMG_0402.jpg" alt="Obra 2"></div>
+        <div class="obra-item"><img src="img/tigres.jpg" alt="Obra 3"></div>
+        <div class="obra-item"><img src="img/carrusel.jpg" alt="Carrusel"></div>
+        <div class="obra-item"><img src="img/niños.jpg" alt="Niños"></div>
     </div>
-    
+
+    <div class="contenedor-boton">
+        <a href="index.html" class="btn-volver">Volver al menú principal</a>
+    </div>
+
 </body>
 </html>
