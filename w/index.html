@@ -23,24 +23,32 @@
 
         /* Contenedor de la barra de navegación */
         .navbar {
-            background-color: transparent; /* background-color es el Color de fondo del navbar (en este caso es transparente) */
-            overflow: hidden; /* Evita desbordes de los elementos internos (texto) hacia los lados  */
-            
+            display: flex; /* Activa Flexbox */
+            justify-content: space-between; /* Separa izquierda y derecha */
+            align-items: center; /* Centra verticalmente */
+            padding: 20px 40px;
+            background-color: transparent; /* Fondo transparente */
+        }
+        /* Nombre (izquierda) */
+        .logo {
+            color: white;
+            font-size: 20px;
+            letter-spacing: 4px; /* Espaciado entre letras (como la imagen) */
         }
 
-        /* Estilo de los enlaces dentro del navbar */
-        .navbar a {
-            float: left; /* Hace que los links se alineen horizontalmente */
-            color: white; /* Color del texto */
-            text-align: center;
-            padding: 14px 20px; /* Espaciado interno */
-            text-decoration: none; /* Quita el subrayado */
+        /* Contenedor de links */
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;padding: 8px 16px;
+            border: 1px solid white; /* estilo botón */
         }
-
-        /* Efecto al pasar el mouse */
-        .navbar a:hover {
-            background-color: red; /* Cambia el fondo a rojo */
+        /* Hover */
+        .menu a:hover {
+            background-color: 
+            white;color: black;
         }
+        
     </style>
 </head>
 
@@ -48,13 +56,14 @@
 
     <!-- Barra de navegación -->
     <nav class="navbar">
-         <!--El texto en el navbar -->
-        Sofia Becerra Forero
-        <!-- Enlace a página de Obras -->
+    <!-- Nombre a la izquierda -->
+    <div class="logo">Sofia Becerra Forero</div>
+
+    <!-- Menú a la derecha -->
+    <div class="menu">
         <a href="Obras.html">Obras</a>
-        <!-- Enlace a página de Contactos -->
         <a href="Contactos.html">Contactos</a>
-        
+    </div>
     </nav>
 
 </body>
