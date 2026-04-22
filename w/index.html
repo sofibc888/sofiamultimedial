@@ -1,57 +1,56 @@
 <!DOCTYPE html>
-
+<!-- Indica que el documento usa un lenguaje HTML5 que se utiliza para crear paginas web-->
 
 <html lang="es">
+<!-- Idioma del contenido -->
+
 <head>
-<meta charset="UTF-8">
-<title>Navbar Horizontal</title>
+    <meta charset="UTF-8">
+    <!-- Permite mostrar correctamente tildes y caracteres especiales -->
 
+    <title>Navbar Horizontal</title>
+    <!-- Título que aparece en la pestaña del navegador -->
 
-  
-  <style>
-body {
-  background-image: url(img/pulpofondo.jpg);
+    <style>
+        /* Estilos generales de la página */
+        body {
+            background-image: url(w/img/pulpofondo.jpg); /* Imagen de fondo */
+            margin: 0; /* Elimina márgenes por defecto */
+            font-family: Arial, sans-serif; /* Tipo de letra */
+        }
 
-  
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+        /* Contenedor de la barra de navegación */
+        .navbar {
+            background-color: #333; /* Color de fondo oscuro */
+            overflow: hidden; /* Evita desbordes de los elementos internos */
+        }
 
-.navbar {
-  background-color: #333;
-  
-  overflow: hidden;
-}
+        /* Estilo de los enlaces dentro del navbar */
+        .navbar a {
+            float: left; /* Hace que los links se alineen horizontalmente */
+            color: white; /* Color del texto */
+            text-align: center;
+            padding: 14px 20px; /* Espaciado interno */
+            text-decoration: none; /* Quita el subrayado */
+        }
 
-.navbar a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: red;
-}
-</style>
+        /* Efecto al pasar el mouse */
+        .navbar a:hover {
+            background-color: red; /* Cambia el fondo a rojo */
+        }
+    </style>
 </head>
 
 <body>
 
-   <nav class="nav-inferior">
-        <a href="Obras.html" class="btn-nav">Obras</a>
-        <a href="Contactos.html" class="btn-nav">Contactos</a>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <!-- Enlace a página de Obras -->
+        <a href="Obras.html">Obras</a>
 
-  
-<div 
-</div>
-
-</body>
-</html>
-
-    
+        <!-- Enlace a página de Contactos -->
+        <a href="Contactos.html">Contactos</a>
+    </nav>
 
 </body>
-
 </html>
