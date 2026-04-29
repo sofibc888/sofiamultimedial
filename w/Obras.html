@@ -21,7 +21,7 @@
         /* Fondo BLANCO y centrado de todo el contenido */
         body {
             background-color: #FFFFFF; /* Fondo blanco puro */
-            font-family: "Times New Roman", Times, serif;
+            font-family: "Times New Roman", Times, serif; /* Fuente Times New Roman */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -31,50 +31,73 @@
         }
 
         /* ================================================
-           BOTÓN CONTACTOS (esquina superior derecha)
+           BOTONES CUADRADOS EN LA ESQUINA SUPERIOR
            ================================================ */
-        .contactos {
-            position: fixed; /* Fijo en pantalla */
-            top: 20px;
-            right: 30px;
-            z-index: 100;
+        
+        /* Contenedor de los dos botones en la esquina superior derecha */
+        .botones-esquina {
+            position: fixed; /* Fijo en la pantalla (no se mueve al hacer scroll) */
+            top: 20px;      /* Distancia desde arriba */
+            right: 20px;    /* Distancia desde la derecha */
+            display: flex;  /* Pone los botones uno al lado del otro */
+            gap: 15px;      /* Espacio entre los dos botones */
+            z-index: 100;   /* Asegura que estén por encima del carrusel */
         }
 
-        .contactos a {
-            text-decoration: none;
-            color: #1D293D;
-            font-size: 18px;
+        /* Estilo de los botones cuadrados (mismo formato que "volver al menú principal") */
+        .boton-cuadrado {
+            display: inline-block;
+            padding: 12px 25px;      /* Relleno interno */
+            background-color: transparent; /* Fondo transparente */
+            color: #1D293D;           /* Color del texto azul oscuro */
+            border: 2px solid #1D293D; /* Borde sólido del mismo color */
+            text-decoration: none;     /* Elimina subrayado */
+            font-family: "Times New Roman", Times, serif; /* Times New Roman */
+            font-size: 16px;           /* Tamaño de letra */
+            font-weight: bold;         /* Negrita */
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Transición suave */
+            /* Esquinas CUADRADAS (sin redondeo) */
+            border-radius: 0px;
         }
 
-        .contactos a:hover {
-            text-decoration: underline;
+        /* Efecto al pasar el mouse por encima del botón cuadrado */
+        .boton-cuadrado:hover {
+            background-color: #1D293D; /* Fondo se vuelve oscuro */
+            color: #FFFFFF;            /* Texto se vuelve blanco */
+            transform: translateY(-2px); /* Se levanta ligeramente */
         }
 
         /* ================================================
            TÍTULO "Obras"
            ================================================ */
         h1 {
-            font-size: 70px;
-            margin-bottom: 50px;
+            font-size: 80px;           /* Título más grande */
+            margin-bottom: 60px;       /* Margen inferior */
             color: #1D293D;
             text-align: center;
+            font-family: "Times New Roman", Times, serif; /* Times New Roman */
+            font-weight: normal;
         }
 
         /* ================================================
-           CARRUSEL
+           CARRUSEL MÁS GRANDE (ocupa más espacio)
            ================================================ */
         
-        /* Contenedor principal del carrusel */
+        /* Contenedor principal del carrusel - AHORA MÁS GRANDE */
         .carrusel {
             position: relative;
             width: 100%;
-            max-width: 900px;
+            max-width: 1200px;    /* Aumentado de 900px a 1200px (más ancho) */
             margin: 0 auto;
         }
 
         /* Área donde se ven las imágenes */
         .ventana {
             overflow: hidden; /* Oculta lo que no se ve */
+            /* Esquinas PUNTIAGUDAS */
+            border-radius: 0px;
         }
 
         /* Fila horizontal de todas las imágenes */
@@ -88,7 +111,7 @@
             width: 100%;
             flex-shrink: 0; /* No se encoge */
             height: auto;
-            max-height: 550px;
+            max-height: 650px; /* Aumentado de 550px a 650px (más alto) */
             object-fit: contain; /* Imagen completa sin recortes */
             background-color: #FFFFFF;
             /* Esquinas PUNTIAGUDAS (sin redondeo) */
@@ -96,7 +119,7 @@
         }
 
         /* ================================================
-           FLECHAS DEL CARRUSEL
+           FLECHAS DEL CARRUSEL (más grandes también)
            ================================================ */
         
         /* Estilo de ambas flechas */
@@ -107,28 +130,31 @@
             background-color: rgba(29, 41, 61, 0.8);
             color: white;
             border: none;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%; /* Solo las flechas son redondas */
-            font-size: 25px;
+            width: 55px;         /* Flechas más grandes */
+            height: 55px;        /* Flechas más grandes */
+            border-radius: 0px;  /* Flechas CUADRADAS para que coincidan con los botones */
+            font-size: 30px;     /* Icono más grande */
             cursor: pointer;
             transition: 0.3s;
             z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         button:hover {
             background-color: rgba(29, 41, 61, 1);
-            transform: translateY(-50%) scale(1.1);
+            transform: translateY(-50%) scale(1.05);
         }
 
         /* Flecha izquierda */
         .anterior {
-            left: -20px;
+            left: -25px; /* Más separada hacia afuera */
         }
 
         /* Flecha derecha */
         .siguiente {
-            right: -20px;
+            right: -25px; /* Más separada hacia afuera */
         }
 
         /* ================================================
@@ -137,16 +163,16 @@
         .puntos {
             display: flex;
             justify-content: center;
-            gap: 12px;
-            margin-top: 25px;
-            margin-bottom: 40px;
+            gap: 15px;
+            margin-top: 35px;
+            margin-bottom: 50px;
         }
 
         .punto {
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             background-color: #CCCCCC;
-            border-radius: 50%;
+            border-radius: 0px; /* Puntos CUADRADOS para mantener coherencia */
             cursor: pointer;
             transition: 0.3s;
         }
@@ -157,7 +183,7 @@
         }
 
         /* ================================================
-           BOTÓN VOLVER
+           BOTÓN VOLVER AL MENÚ PRINCIPAL (abajo, centrado)
            ================================================ */
         .volver {
             display: inline-block;
@@ -166,42 +192,125 @@
             color: #1D293D;
             border: 2px solid #1D293D;
             text-decoration: none;
+            font-family: "Times New Roman", Times, serif;
             font-size: 20px;
-            border-radius: 50px;
-            transition: 0.3s;
             font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Esquinas CUADRADAS */
+            border-radius: 0px;
         }
 
         .volver:hover {
             background-color: #1D293D;
             color: white;
+            transform: translateY(-2px);
         }
 
         /* ================================================
-           RESPONSIVE (celulares)
+           RESPONSIVE (celulares y tablets)
            ================================================ */
+        
+        /* Tablets y celulares grandes */
         @media (max-width: 768px) {
-            h1 { font-size: 45px; }
-            .carrusel { max-width: 95%; }
-            button { width: 35px; height: 35px; font-size: 18px; }
-            .anterior { left: -15px; }
-            .siguiente { right: -15px; }
-            .volver { padding: 12px 30px; font-size: 16px; }
+            h1 { 
+                font-size: 55px; 
+                margin-bottom: 40px;
+            }
+            
+            .carrusel { 
+                max-width: 90%; /* En móviles ocupa el 90% del ancho */
+            }
+            
+            .imagenes img {
+                max-height: 450px; /* Altura más pequeña en móviles */
+            }
+            
+            button { 
+                width: 40px; 
+                height: 40px; 
+                font-size: 22px; 
+            }
+            
+            .anterior { 
+                left: -15px; 
+            }
+            
+            .siguiente { 
+                right: -15px; 
+            }
+            
+            .boton-cuadrado {
+                padding: 8px 18px;
+                font-size: 14px;
+            }
+            
+            .volver { 
+                padding: 12px 30px; 
+                font-size: 18px; 
+            }
+            
+            .puntos {
+                gap: 10px;
+            }
+            
+            .punto {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        /* Celulares muy pequeños */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 45px;
+            }
+            
+            button {
+                width: 35px;
+                height: 35px;
+                font-size: 18px;
+            }
+            
+            .anterior {
+                left: -10px;
+            }
+            
+            .siguiente {
+                right: -10px;
+            }
+            
+            .botones-esquina {
+                top: 10px;
+                right: 10px;
+                gap: 8px;
+            }
+            
+            .boton-cuadrado {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Enlace a Contactos -->
-    <div class="contactos">
-        <a href="Contactos.html">Contactos</a>
+    <!-- ================================================
+       BOTONES CUADRADOS EN LA ESQUINA SUPERIOR DERECHA
+       ================================================ -->
+    <div class="botones-esquina">
+        <a href="Contactos.html" class="boton-cuadrado">Contactos</a>
+        <a href="index.html" class="boton-cuadrado">Menú</a>
     </div>
 
     <!-- Título -->
     <h1>Obras</h1>
 
-    <!-- CARRUSEL -->
+    <!-- ================================================
+       CARRUSEL (más grande)
+       ================================================ -->
     <div class="carrusel">
         <!-- Flecha izquierda -->
         <button class="anterior" id="btnAnterior">‹</button>
@@ -225,89 +334,118 @@
     <!-- Puntos indicadores -->
     <div class="puntos" id="puntos"></div>
 
-    <!-- Botón volver -->
+    <!-- Botón volver al menú principal (abajo, centrado) -->
     <a href="index.html" class="volver">Volver al menú principal</a>
 
     <!-- ================================================
-           JAVASCRIPT (lógica del carrusel)
-           ================================================ -->
+       JAVASCRIPT (lógica del carrusel)
+       ================================================ -->
     <script>
-        // 1. Seleccionar todos los elementos que necesitamos
-        const imagenes = document.getElementById('carruselImagenes'); // Contenedor de imágenes
-        const total = document.querySelectorAll('.imagenes img').length; // Cantidad de imágenes (6)
-        let indice = 0; // Empieza en la imagen 0 (la primera)
+        // ================================================
+        // DECLARACIÓN DE VARIABLES
+        // ================================================
+        
+        // Selecciona el contenedor que tiene todas las imágenes en fila
+        const imagenes = document.getElementById('carruselImagenes');
+        
+        // Calcula cuántas imágenes hay (6 en total)
+        const total = document.querySelectorAll('.imagenes img').length;
+        
+        // Variable que guarda en qué imagen estamos (empieza en 0 = primera)
+        let indice = 0;
 
-        // 2. Botones
+        // Selecciona los botones de las flechas
         const anterior = document.getElementById('btnAnterior');
         const siguiente = document.getElementById('btnSiguiente');
 
-        // 3. Función para mover el carrusel
+        // ================================================
+        // FUNCIÓN: Actualizar la posición del carrusel
+        // ================================================
         function moverCarrusel() {
-            // Mueve las imágenes: si índice=0 → 0%, índice=1 → -100%, índice=2 → -200%
+            // Mueve el carrusel: si índice=0 → 0%, índice=1 → -100%, índice=2 → -200%
             imagenes.style.transform = `translateX(-${indice * 100}%)`;
             
             // Actualizar los puntos (para que se vea cuál está activo)
             const puntos = document.querySelectorAll('.punto');
             puntos.forEach((punto, i) => {
                 if (i === indice) {
-                    punto.classList.add('activo');
+                    punto.classList.add('activo'); // Punto activo se pone oscuro
                 } else {
-                    punto.classList.remove('activo');
+                    punto.classList.remove('activo'); // Puntos inactivos se ponen grises
                 }
             });
         }
 
-        // 4. Función para ir a la SIGUIENTE imagen
+        // ================================================
+        // FUNCIÓN: Ir a la SIGUIENTE imagen
+        // ================================================
         function siguienteImagen() {
             if (indice === total - 1) {
-                indice = 0; // Si es la última, vuelve a la primera
+                indice = 0; // Si es la última imagen, vuelve a la primera (efecto circular)
             } else {
-                indice++; // Sino, avanza
+                indice++; // Sino, avanza a la siguiente
             }
             moverCarrusel();
         }
 
-        // 5. Función para ir a la ANTERIOR imagen
+        // ================================================
+        // FUNCIÓN: Ir a la ANTERIOR imagen
+        // ================================================
         function anteriorImagen() {
             if (indice === 0) {
-                indice = total - 1; // Si es la primera, va a la última
+                indice = total - 1; // Si es la primera imagen, va a la última (efecto circular)
             } else {
-                indice--; // Sino, retrocede
+                indice--; // Sino, retrocede a la anterior
             }
             moverCarrusel();
         }
 
-        // 6. Función para ir a una imagen ESPECÍFICA (al hacer clic en un punto)
+        // ================================================
+        // FUNCIÓN: Ir a una imagen ESPECÍFICA (al hacer clic en un punto)
+        // ================================================
         function irAImagen(posicion) {
             indice = posicion;
             moverCarrusel();
         }
 
-        // 7. Crear los puntos indicadores automáticamente
+        // ================================================
+        // FUNCIÓN: Crear los puntos indicadores automáticamente
+        // ================================================
         function crearPuntos() {
             const contenedorPuntos = document.getElementById('puntos');
-            contenedorPuntos.innerHTML = ''; // Limpiar por si acaso
+            contenedorPuntos.innerHTML = ''; // Limpiar el contenedor por si acaso
             
+            // Crear un punto por cada imagen
             for (let i = 0; i < total; i++) {
                 const punto = document.createElement('div');
                 punto.classList.add('punto');
-                if (i === 0) punto.classList.add('activo'); // El primero empieza activo
-                punto.addEventListener('click', () => irAImagen(i));
+                if (i === 0) punto.classList.add('activo'); // El primer punto empieza activo
+                punto.addEventListener('click', () => irAImagen(i)); // Al hacer clic, va a esa imagen
                 contenedorPuntos.appendChild(punto);
             }
         }
 
-        // 8. Conectar los botones a las funciones
+        // ================================================
+        // CONECTAR LOS BOTONES A LAS FUNCIONES
+        // ================================================
         siguiente.addEventListener('click', siguienteImagen);
         anterior.addEventListener('click', anteriorImagen);
 
-        // 9. Navegación con TECLADO (flechas ← y →)
+        // ================================================
+        // NAVEGACIÓN CON TECLADO (flechas ← y →)
+        // ================================================
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight') siguienteImagen();
-            if (e.key === 'ArrowLeft') anteriorImagen();
+            if (e.key === 'ArrowRight') {
+                siguienteImagen(); // Flecha derecha: imagen siguiente
+            }
+            if (e.key === 'ArrowLeft') {
+                anteriorImagen(); // Flecha izquierda: imagen anterior
+            }
         });
 
-        // 10. Iniciar todo cuando cargue la página
+        // ================================================
+        // INICIAR TODO CUANDO CARGUE LA PÁGINA
+        // ================================================
         crearPuntos();
     </script>
 
