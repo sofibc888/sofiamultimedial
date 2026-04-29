@@ -6,17 +6,22 @@
     <style>  
        
         /* En el Body se guardan los Estilos generales de la página */
+        html, body {
+            margin: 0;           /* Elimina márgenes exteriores */
+            padding: 0;          /* Elimina rellenos interiores */
+            height: 100%;        /* Ocupa toda la altura disponible */
+        }
         body {
             background-image: url(img/corderocomplete.jpg); /* Imagen del fondo */
-            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+            background-size: cover; /* Hace que la imagen cubra toda la pantalla (aunque se recorte) */
             background-position: center center; /* Centra la imagen horizontal y verticalmente */
             background-repeat: no-repeat; /* Evita que se repita */
             background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-            min-height: 100vh; /* Ajustado a 100vh para que cubra el alto total de la ventana */
-            margin: 0;
-            font-family: Times New Roman , Times, serif;
+            background-color: #000000; /* Color negro de respaldo para evitar bordes blancos en los recortes */
+            min-height: 100vh; /* Altura mínima = 100% del alto de la ventana */
+            margin: 0; /* Margen externo del body en cero */
+            font-family: Times New Roman, Times, serif; /* Fuente elegante para todo el texto */
         }
-
          /* Contenedor de la barra de navegación */
          .navbar {
              display: flex; /* Lo convierte en un  contenedor flexible, lo que hace que se ordene mas facil, es decir que los elementos internos se ordenan en fila */
