@@ -1828,7 +1828,7 @@ CONTACTO
                 <div class="contacto-texto">
                     <div class="contacto-etiqueta">Email</div>
                     <div class="contacto-valor">
-                        <a href="mailto:sbecerraforero@uft.edu">sbecerraforero@uft.edu</a>
+                        <a href="mailto:888888888">88888888</a>
                     </div>
                 </div>
             </div>
@@ -1849,7 +1849,7 @@ CONTACTO
                 <div class="icono">📞</div>
                 <div class="contacto-texto">
                     <div class="contacto-etiqueta">Teléfono</div>
-                    <div class="contacto-valor">+569 6534 9678</div>
+                    <div class="contacto-valor">+8888888</div>
                 </div>
             </div>
             
