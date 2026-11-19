@@ -1,12 +1,42 @@
+<img src="https://media.giphy.com/media/rbbUkD1WFhvTAsMOxv/giphy.gif"
+     style="width:100%; height:auto; display:block;">
+
 # sofiamultimedial
 
-## taller miltimedia
+## taller multimedia
 
-#### cultura web y arte digital 
+### cultura web y arte digital 
+
+#### Desarrollo pagina web
+
+**Mi pagina**
 
 Ejercico 1, semana 1 
 
 ```
+<!DOCTYPE html>
+
+
+
+## Exploración creativa de arte, tecnología y medios digitales interactivos.
+
+### index
+## Unidad I.  [Hipervícunlo](#unidad-i--hipervicunlo-) <br> 
+1. [Mi Primera página.](#mi-primera-página) <br> 
+2. [Enlaces -  Links](#2-enlaces-links) <br> 
+3. [Mini sitio / 3 páginas conectadas](#3-mini-sitio-3-páginas-conectadas) <br> 
+4. [css-intermedio-interacción-y-layout](#4-css-intermedio-interacción-y-layout) <br>
+
+resultados pagina web:(https://sofibc888.github.io/sofiamultimedial/w/index.html)
+## Unidad II. [Programación visual creativa basada en nodos](#programación-visual-creativa-basada-en-nodos) <br>
+1. [Intro ToucDesigner](#1-intro-a-touchdesigner) <br>
+2. [Ejercicios:](#2-canasta-de-ejercicios) <br>
+##### Nube de puntos con Pop basada en imágenes, Lsystem, Mapping básico 
+
+
+## Unidad I.  Hipervicunlo ><><><
+#### 1. Mi primera página:
+``` html
 <!DOCTYPE html>
 <!-- Indica al navegador que este documento usa HTML5 -->
 
@@ -14,57 +44,69 @@ Ejercico 1, semana 1
 <!-- Inicio del documento HTML -->
 
 <head>
-    <!-- Sección donde van metadatos, título y estilos -->
-    <meta charset="UTF-8">
-    <!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
+<!-- Sección donde van metadatos, título y estilos -->
 
-    <title>sofiamultimedial</title>
-    <!-- Título de la página que aparece en la pestaña del navegador -->
+<meta charset="UTF-8">
+<!-- Define la codificación de caracteres para que se vean bien tildes y símbolos -->
 
-    <style>
-        /* Aquí comienza la sección de estilos CSS que define la apariencia visual */
-        
-        body {
-            /* "body" se refiere a todo el contenido visible de la página */
-            background-color: black;
-            /* Fondo negro */
-            color: green;
-            /* Texto verde */
-            margin: 0;
-            /* Elimina los márgenes que los navegadores agregan por defecto */
-            height: 100vh;
-            /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
-            display: flex;
-            /* Activa el sistema Flexbox para organizar y centrar elementos */
-            justify-content: center;
-            /* Centra el contenido horizontalmente */
-            align-items: center;
-            /* Centra el contenido verticalmente */
-            font-family: Arial, sans-serif;
-            /* Define la tipografía del texto */
-            font-size: 60px;
-            /* Define el tamaño grande del texto */
-        }
-        /* ¡IMPORTANTE! Esta llave } cierra las reglas de body */
-    </style>
-    <!-- ¡IMPORTANTE! Esta etiqueta cierra la sección de estilos -->
+<title>Multimedial</title>
+<!-- Título de la página que aparece en la pestaña del navegador -->
+
+<style>
+/* Aquí comienza la sección de estilos CSS que define la apariencia visual */
+
+body{
+/* "body" se refiere a todo el contenido visible de la página */
+
+  background-color: white;
+  /* Define que el fondo de toda la página sea blanco */
+
+  color: black;
+  /* Define que el color del texto sea negro */
+
+  margin: 0;
+  /* Elimina los márgenes que los navegadores agregan por defecto */
+
+  height: 100vh;
+  /* Hace que el alto del cuerpo sea igual al 100% de la altura de la pantalla */
+
+  display: flex;
+  /* Activa el sistema Flexbox para organizar y centrar elementos */
+
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+
+  align-items: center;
+  /* Centra el contenido verticalmente */
+
+  font-family: Arial, sans-serif;
+  /* Define la tipografía del texto */
+
+  font-size: 60px;
+  /* Define el tamaño grande del texto */
+
+}
+/* Fin de las reglas de estilo del body */
+
+</style>
+<!-- Fin de la sección de estilos -->
 
 </head>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra la sección head -->
+<!-- Fin de la sección head -->
 
 <body>
-    <!-- Inicio del contenido visible de la página -->
-    sofiamultimedial
-    <!-- Texto que aparece en el centro de la pantalla -->
+<!-- Inicio del contenido visible de la página -->
+
+MULTIMEDIAL
+<!-- Texto que aparece en el centro de la pantalla -->
+
 </body>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra el contenido visible -->
+<!-- Fin del contenido visible -->
 
 </html>
-<!-- ¡IMPORTANTE! Esta etiqueta cierra el documento HTML -->
+<!-- Fin del documento HTML -->
 
 ```
-
-
 
 Tarea 1 
 
@@ -1862,3 +1904,62 @@ CONTACTO
 
 
 ```
+
+### 2. CANASTA EJERCICIOS SEMESTRE 
+
+
+## Mapping  [Ver archivos](https://drive.google.com/drive/folders/1a72yyMezbUqsD95dNKcdLqG98t-pzBh1?usp=sharing)
+
+<img src="https://media.giphy.com/media/0S81mh25SF4OviHi8b/giphy.gif"
+     style="width:auto; height:auto; display:block;">
+
+<img src="https://media.giphy.com/media/8GeHdNhTekj3iDrPfr/giphy.gif"
+     style="width:auto; height:auto; display:block;">
+
+## Comfy IA  [Ver archivos](https://media.giphy.com/media/pj2hJdebWVcMaPwsiU/giphy.gif) 
+
+<img src="img/cia.png"
+     style="width:auto; height:auto; display:block;">
+
+
+
+## PROYECTO FINAL/ OBRA FINAL 
+
+
+### FASE INICIAL Y PRIMEROS INTENTOS:
+
+Pruebas y ejercicios.
+
+<img src="https://media.giphy.com/media/pj2hJdebWVcMaPwsiU/giphy.gif"
+     style="width:auto; height:auto; display:block;">
+
+<img src="https://media.giphy.com/media/KfRo5T2YPVBqYLJoSb/giphy.gif"
+     style="width:auto; height:auto; display:block;">
+
+
+<img src="https://media.giphy.com/media/88UDHeeDKkMuM9G2Vs/giphy.gif"
+style="width:auto; height:auto; display:block;">
+
+
+<img src="https://media.giphy.com/media/9YuXvJt3L70dwYAYTr/giphy.gif"
+style="width:auto; height:auto; display:block;">
+
+
+
+### FUNDAMENTO TEORICO DE MI OBRA:
+
+>Mi propuesta artística surge del interés por explorar la relación entre las formas orgánicas y los sistemas tecnológicos, tomando la pantalla como un lienzo y espacio de experimentación, tensión y transformación. A través de una composición visual que combina una estructura orgánica con  ramificaciones y una interfaz gráfica central, buscó generar un diálogo entre aquello que asociamos a lo vivo, lo espontáneo y lo natural, y aquello que pertenece al mundo digital, caracterizado por sus códigos, estructuras y mecanismos de representación.
+
+>La pantalla se presenta como un elemento central de la obra, no sólo como un soporte de visualización, sino también como una interfaz que interviene en la manera en que percibimos e interpretamos las imágenes. Me interesa explorar cómo este dispositivo puede convertirse en una especie de límite entre dos universos: uno orgánico, que se expande mediante ramificaciones y formas cambiantes, y otro tecnológico, que organiza la información a través de estructuras geométricas, fragmentos y códigos visuales. Sin embargo, ambos espacios no permanecen separados; se entrelazan, se invaden y se deforman, poniendo en cuestión la división entre naturaleza y tecnología.
+
+>Las figuras orgánicas que atraviesan la composición funcionan como formas vivas que parecen crecer más allá de sus propios límites, incluso invadiendo el espacio de la pantalla. Sus ramificaciones recuerdan tanto a estructuras vegetales como a redes de conexión, circuitos o sistemas neuronales. Esta ambigüedad me permite establecer una relación entre los procesos naturales de crecimiento y las lógicas de conexión propias del entorno digital. Me interesa que estas figuras no sean entendidas únicamente como elementos al azar sino como cosas o criaturas que tensionan la interfaz, alteran su orden y parecen apropiarse de ella.
+
+
+<img src= "https://media.giphy.com/media/GdzBOH9xXFL2rDL0hI/giphy.gif"
+style="width:auto; height:auto; display:block;">
+
+>Como referencia visual, retomo imágenes de la película El castillo ambulante (2004), dirigida por Hayao Miyazaki y producida por Studio Ghibli. Me interesa especialmente su construcción de mundos donde lo mecánico, lo fantástico y lo orgánico conviven sin una separación estricta. La película propone espacios híbridos, máquinas que parecen tener vida propia y paisajes en los que lo artificial se integra con lo natural. Esta referencia funciona como un punto de partida para pensar una imagen en la que los límites entre lo vivo y lo construido se vuelven inestables, trasladando esa sensibilidad al cruce entre la ilustración, la interfaz y la imagen digital.
+
+>A partir de esta investigación, incorporó también el texto como un elemento que amplía las posibilidades de lectura de la obra. El texto no aparece únicamente como una explicación o descripción de lo representado, sino como un recurso que introduce nuevas interpretaciones y permite jugar con las expectativas del espectador. Me interesa explorar cierta ironía entre lo que la imagen parece sugerir y lo que el texto plantea, generando contradicciones, desplazamientos de sentido y lecturas que pueden resultar ambiguas o inesperadas.
+
+>De este modo, el proyecto se construye como una exploración de las relaciones entre lo orgánico y lo digital, lo espontáneo y lo programado, la imagen y el lenguaje. La interfaz deja de ser un elemento neutral para convertirse en un espacio de fricción, mientras que las formas vegetales y las estructuras gráficas se mezclan hasta dificultar una distinción clara entre ambos universos. A través de la integración del texto en TouchDesigner, busco expandir estas relaciones y proponer una experiencia visual en la que la percepción se encuentre constantemente abierta a nuevas asociaciones, interpretaciones y contradicciones.
