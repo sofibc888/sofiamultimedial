@@ -916,5 +916,10 @@ Nube de puntos con Pop basada en imágenes, Lsystem, Mapping básico.
 [Ejercicios:](https://drive.google.com/drive/folders/14iyXsOvZwlD-uWK481S4XWNlthqRB1o0?usp=sharing)
 
 
+https://drive.google.com/drive/folders/19QsnpLOrrcDUBe7CflLzxZp6zXSYpxzV
+https://drive.google.com/drive/folders/1NevEaZiT0C-oqyAWQ0TIX8f6MvgXUa7i
+https://drive.google.com/drive/folders/1vvcoozQkC2ZwYRI8ikFBnohFudfAVBwP
+
+
 
 
